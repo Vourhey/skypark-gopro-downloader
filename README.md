@@ -10,6 +10,7 @@ Install
 $ git clone https://github.com/Vourhey/skypark-gopro-downloader
 $ cd skypark-gopro-downloader
 $ virtualenv -p python3 env
+$ source env/bin/activate
 $ pip install -r requirements.txt
 ```
 
