@@ -10,10 +10,12 @@ def main():
     while True:
         try:
             print("Connect to GoPro")
-            gpCam = GoProCamera.GoPro(constants.auth)
+            gpCam = GoProCamera.GoPro()
+
+            print(gpCam)
 
             print("Downloading all the files...")
-            media = gpCam.downloadAll(option="videos")
+            media = gpCam.downloadAll()
 
             print("Deleting all files")
             gpCam.delete(len(media))
