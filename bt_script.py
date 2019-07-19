@@ -5,6 +5,7 @@ import gatt
 from goprocam import GoProCamera, constants
 import time
 from threading import Timer
+from config import YANDEX_DISK_FOLDER
 
 bt_connected = False
 
