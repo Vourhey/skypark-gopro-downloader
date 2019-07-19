@@ -13,6 +13,8 @@ def main():
             gpCam = GoProCamera.GoPro()
 
             print(gpCam)
+            if gpCam is None:
+                continue
 
             print("Downloading all the files...")
             media = gpCam.downloadAll()
